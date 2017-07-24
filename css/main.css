@@ -1,6 +1,15 @@
+.feature-box {
+    max-width: 360px;
+    margin: 0 auto
+}
+
 .feature-box i {
-    font-size: 6em;
+    font-size: 7em;
     line-height: 0!important;
     margin: 0;
-    padding: 0;
+    padding: 0
+}
+
+.feature-box p {
+    padding: 0 20px
 }
