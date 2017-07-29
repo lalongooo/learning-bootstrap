@@ -1,219 +1,229 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Permutas SEP</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </head>
-  <body>
 
-    <div class="container">
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<head>
+  <title>Permutas SEP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Permutas SEP</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesion</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Crear cuenta</a></li>
-            </ul>
-          </div>
+          <a class="navbar-brand" href="#">Permutas SEP</a>
         </div>
-      </nav>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesion</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Crear cuenta</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <!-- Jumbotron and search form -->
-      <div class="jumbotron">
-        <h1 class="display-3">Permutas SEP</h1>
-        <p class="lead">Encuentra al profesor con quien permutar tu plaza de trabajo</p>
-        <hr class="my-4">
-        <p class="lead">Realiza una b&uacute;squeda r&aacute;pida de la permuta que buscas:</p>
-        <div class="row justify-content-center">
-          <div class="col-xs-6">
-            <div class="btn-group mx-2">
-              <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nivel educativo
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Pre-escolar</a>
-                <a class="dropdown-item" href="#">Primaria</a>
-                <a class="dropdown-item" href="#">Secundaria</a>
-              </div>
+    <!-- Jumbotron and search form -->
+    <div class="jumbotron">
+      <h1 class="display-3">Permutas SEP</h1>
+      <p class="lead">Encuentra al profesor con quien permutar tu plaza de trabajo</p>
+      <hr class="my-4">
+      <p class="lead">Realiza una b&uacute;squeda r&aacute;pida de la permuta que buscas:</p>
+
+      <!-- <div class="w-100 p-3"> -->
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 mb-3">
+
+          <div class="btn-group btn-block">
+            <button class="btn btn-primary btn-block btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nivel Educativo
+                  </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Pre-escolar</a>
+              <a class="dropdown-item" href="#">Primaria</a>
+              <a class="dropdown-item" href="#">Secundaria</a>
             </div>
           </div>
-          <div class="col-xs-6">
-            <div class="btn-group mx-2">
-              <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Estado
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Aguascalientes</a>
-                <a class="dropdown-item" href="#">Baja California</a>
-                <a class="dropdown-item" href="#">Baja California Sur</a>
-                <a class="dropdown-item" href="#">Campeche</a>
-                <a class="dropdown-item" href="#">Chiapas</a>
-                <a class="dropdown-item" href="#">Chihuahua</a>
-                <a class="dropdown-item" href="#">Ciudad de México</a>
-                <a class="dropdown-item" href="#">Coahuila</a>
-                <a class="dropdown-item" href="#">Colima</a>
-                <a class="dropdown-item" href="#">Durango</a>
-                <a class="dropdown-item" href="#">Estado de México</a>
-                <a class="dropdown-item" href="#">Guanajuato</a>
-                <a class="dropdown-item" href="#">Guerrero</a>
-                <a class="dropdown-item" href="#">Hidalgo</a>
-                <a class="dropdown-item" href="#">Jalisco</a>
-                <a class="dropdown-item" href="#">Michoacán</a>
-                <a class="dropdown-item" href="#">Morelos</a>
-                <a class="dropdown-item" href="#">Nayarit</a>
-                <a class="dropdown-item" href="#">Nuevo León</a>
-                <a class="dropdown-item" href="#">Oaxaca</a>
-                <a class="dropdown-item" href="#">Puebla</a>
-                <a class="dropdown-item" href="#">Querétaro</a>
-                <a class="dropdown-item" href="#">Quintana Roo</a>
-                <a class="dropdown-item" href="#">San Luis Potosí</a>
-                <a class="dropdown-item" href="#">Sinaloa</a>
-                <a class="dropdown-item" href="#">Sonora</a>
-                <a class="dropdown-item" href="#">Tabasco</a>
-                <a class="dropdown-item" href="#">Tamaulipas</a>
-                <a class="dropdown-item" href="#">Tlaxcala</a>
-                <a class="dropdown-item" href="#">Veracruz</a>
-                <a class="dropdown-item" href="#">Yucatán</a>
-                <a class="dropdown-item" href="#">Zacatecas</a>
-              </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 mb-3">
+
+          <div class="btn-group btn-block">
+            <button class="btn btn-primary btn-block btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Estado
+                  </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Aguascalientes</a>
+              <a class="dropdown-item" href="#">Baja California</a>
+              <a class="dropdown-item" href="#">Baja California Sur</a>
+              <a class="dropdown-item" href="#">Campeche</a>
+              <a class="dropdown-item" href="#">Chiapas</a>
+              <a class="dropdown-item" href="#">Chihuahua</a>
+              <a class="dropdown-item" href="#">Ciudad de México</a>
+              <a class="dropdown-item" href="#">Coahuila</a>
+              <a class="dropdown-item" href="#">Colima</a>
+              <a class="dropdown-item" href="#">Durango</a>
+              <a class="dropdown-item" href="#">Estado de México</a>
+              <a class="dropdown-item" href="#">Guanajuato</a>
+              <a class="dropdown-item" href="#">Guerrero</a>
+              <a class="dropdown-item" href="#">Hidalgo</a>
+              <a class="dropdown-item" href="#">Jalisco</a>
+              <a class="dropdown-item" href="#">Michoacán</a>
+              <a class="dropdown-item" href="#">Morelos</a>
+              <a class="dropdown-item" href="#">Nayarit</a>
+              <a class="dropdown-item" href="#">Nuevo León</a>
+              <a class="dropdown-item" href="#">Oaxaca</a>
+              <a class="dropdown-item" href="#">Puebla</a>
+              <a class="dropdown-item" href="#">Querétaro</a>
+              <a class="dropdown-item" href="#">Quintana Roo</a>
+              <a class="dropdown-item" href="#">San Luis Potosí</a>
+              <a class="dropdown-item" href="#">Sinaloa</a>
+              <a class="dropdown-item" href="#">Sonora</a>
+              <a class="dropdown-item" href="#">Tabasco</a>
+              <a class="dropdown-item" href="#">Tamaulipas</a>
+              <a class="dropdown-item" href="#">Tlaxcala</a>
+              <a class="dropdown-item" href="#">Veracruz</a>
+              <a class="dropdown-item" href="#">Yucatán</a>
+              <a class="dropdown-item" href="#">Zacatecas</a>
             </div>
           </div>
-          <div class="col-xs-12">
-            <div class="btn-group mx-2">
-              <button type="button" class="btn btn-success btn-lg">
-                Buscar
-              </button>
-            </div>
+
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 mb-3 mx-auto">
+
+          <div class="btn-group btn-block">
+            <button type="button" class="btn btn-block btn-success btn-lg">
+                    Buscar
+                  </button>
+          </div>
+
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Features -->
+    <section class="row text-center">
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box">
+          <i class="ion-ios-plus-empty"></i>
+          <h2>Publica</h2>
+          <p>Sin límites. Puedes publicar el número de permutas que quieras, esto te ayudará a encontrar una triangulación o "cadeneo".</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box">
+          <i class="ion-ios-search"></i>
+          <h2>Busca</h2>
+          <p>Deja de leer tantas publicaciones en Facebook, desde la aplicación te será mucho más sencillo encontrar la permuta que necesitas.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box">
+          <i class="ion-ios-location-outline"></i>
+          <h2>Mapas</h2>
+          <p>En cada publicación, podrás ver un mapa que te muestra la ubicación del centro de trabajo en el que estás interesado.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box">
+          <i class="ion-social-facebook-outline"></i>
+          <h2>Facebook</h2>
+          <p>Regístrate con Facebook, así no tienes que recordar una contraseña más para iniciar sesión. Sencillo y rápido.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box">
+          <i class="ion-android-notifications"></i>
+          <h2>Notificaciones</h2>
+          <p>Esto te encantará! Nosotros te avisamos cuando alguien publique una permuta del lugar en el que estás interesado.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box">
+          <i class="ion-ios-chatboxes-outline"></i>
+          <h2>Contacto</h2>
+          <p>Establece contacto inmediato con otros profesores vía telefónica o email. Próximamente, integraremos un chat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe form -->
+    <section class="jumbotron">
+      <section class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="text-center">
+            <strong>¿Quieres saber más?</strong>
+            <br> Estamos preparando una versión web, así como la app para iOS (iPhone/iPad), déjanos tu correo y te avisaremos cuando estén disponibles.
+          </p>
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+          <div class="form-group input-group">
+            <input type="email" class="form-control" id="emailInput" placeholder="Tu correo">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-success">Enviar</button>
+              </span>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Contact form -->
+    <section class="jumbotron">
+      <div class="row">
 
-      <!-- Features -->
-      <section class="row text-center">
-        <div class="col-sm-6 col-md-4">
-          <div class="feature-box">
-            <i class="ion-ios-plus-empty"></i>
-            <h2>Publica</h2>
-            <p>Sin límites. Puedes publicar el número de permutas que quieras, esto te ayudará a encontrar una triangulación o "cadeneo".</p>
+        <div class="col-sm-4 col-xs-12">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu nombre">
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="feature-box">
-            <i class="ion-ios-search"></i>
-            <h2>Busca</h2>
-            <p>Deja de leer tantas publicaciones en Facebook, desde la aplicación te será mucho más sencillo encontrar la permuta que necesitas.</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="feature-box">
-            <i class="ion-ios-location-outline"></i>
-            <h2>Mapas</h2>
-            <p>En cada publicación, podrás ver un mapa que te muestra la ubicación del centro de trabajo en el que estás interesado.</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="feature-box">
-            <i class="ion-social-facebook-outline"></i>
-            <h2>Facebook</h2>
-            <p>Regístrate con Facebook, así no tienes que recordar una contraseña más para iniciar sesión. Sencillo y rápido.</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="feature-box">
-            <i class="ion-android-notifications"></i>
-            <h2>Notificaciones</h2>
-            <p>Esto te encantará! Nosotros te avisamos cuando alguien publique una permuta del lugar en el que estás interesado.</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="feature-box">
-            <i class="ion-ios-chatboxes-outline"></i>
-            <h2>Contacto</h2>
-            <p>Establece contacto inmediato con otros profesores vía telefónica o email. Próximamente, integraremos un chat.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- Subscribe form -->
-      <section class="jumbotron">
-        <section class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <p class="text-center">
-              <strong>¿Quieres saber más?</strong>
-              <br>
-                Estamos preparando una versión web, así como la app para iOS (iPhone/iPad),
-                déjanos tu correo y te avisaremos cuando estén disponibles.
-            </p>
-          </div>
-        </section>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-            <div class="form-group input-group">
-              <input type="email" class="form-control" id="emailInput" placeholder="Tu correo">
-              <span class="input-group-btn">
-                <button type="button" class="btn btn-success">Enviar</button>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Contact form -->
-      <section class="jumbotron">
-        <div class="row">
-
-          <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-8 col-xs-12">
+          <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Nombre</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu nombre">
             </div>
-          </div>
 
-          <div class="col-sm-8 col-xs-12">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nombre</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu nombre">
-              </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu correo">
+              <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie más.</small>
+            </div>
 
-              <div class="form-group">
-                <label for="exampleInputEmail1">Correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu correo">
-                <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie más.</small>
-              </div>
-
-              <div class="form-group">
-                <label for="exampleTextarea">Tu mensaje</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-
-
-
+            <div class="form-group">
+              <label for="exampleTextarea">Tu mensaje</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-      </section>
+
+
+
+      </div>
+    </section>
 
 
 
 
 
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
