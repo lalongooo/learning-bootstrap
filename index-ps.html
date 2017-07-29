@@ -4,11 +4,11 @@
     <title>Permutas SEP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -35,64 +35,71 @@
       </nav>
 
       <!-- Jumbotron and search form -->
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="jumbotron">
-            <h1>Permutas SEP</h1>
-            <p>Encuentra al profesor con quien permutar tu plaza de trabajo</p>
-            <div class="bs-example" data-example-id="button-tag-button-group-justified">
-               <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                 <div class="btn-group">
-                   <button class="btn btn-primary dropdown-toggle btn-success" type="button" data-toggle="dropdown">Nivel Educativo
-                   <span class="caret"></span></button>
-                   <ul class="dropdown-menu">
-                     <li><a href="#">Pre-escolar</a></li>
-                     <li><a href="#">Primaria</a></li>
-                     <li><a href="#">Secundaria</a></li>
-                   </ul>
-                 </div>
-                 <div class="btn-group">
-                   <button class="btn btn-primary dropdown-toggle btn-success" type="button" data-toggle="dropdown">Estado
-                   <span class="caret"></span></button>
-                   <ul class="dropdown-menu">
-                     <li><a href="#">Aguascalientes</a></li>
-                     <li><a href="#">Baja California</a></li>
-                     <li><a href="#">Baja California Sur</a></li>
-                     <li><a href="#">Campeche</a></li>
-                     <li><a href="#">Chiapas</a></li>
-                     <li><a href="#">Chihuahua</a></li>
-                     <li><a href="#">Ciudad de México</a></li>
-                     <li><a href="#">Coahuila</a></li>
-                     <li><a href="#">Colima</a></li>
-                     <li><a href="#">Durango</a></li>
-                     <li><a href="#">Estado de México</a></li>
-                     <li><a href="#">Guanajuato</a></li>
-                     <li><a href="#">Guerrero</a></li>
-                     <li><a href="#">Hidalgo</a></li>
-                     <li><a href="#">Jalisco</a></li>
-                     <li><a href="#">Michoacán</a></li>
-                     <li><a href="#">Morelos</a></li>
-                     <li><a href="#">Nayarit</a></li>
-                     <li><a href="#">Nuevo León</a></li>
-                     <li><a href="#">Oaxaca</a></li>
-                     <li><a href="#">Puebla</a></li>
-                     <li><a href="#">Querétaro</a></li>
-                     <li><a href="#">Quintana Roo</a></li>
-                     <li><a href="#">San Luis Potosí</a></li>
-                     <li><a href="#">Sinaloa</a></li>
-                     <li><a href="#">Sonora</a></li>
-                     <li><a href="#">Tabasco</a></li>
-                     <li><a href="#">Tamaulipas</a></li>
-                     <li><a href="#">Tlaxcala</a></li>
-                     <li><a href="#">Veracruz</a></li>
-                     <li><a href="#">Yucatán</a></li>
-                     <li><a href="#">Zacatecas</a></li>
-                   </ul>
-                 </div>
-                 <div class="btn-group" role="group"> <button type="button" class="btn btn-primary">Buscar</button> </div>
-               </div>
+      <div class="jumbotron">
+        <h1 class="display-3">Permutas SEP</h1>
+        <p class="lead">Encuentra al profesor con quien permutar tu plaza de trabajo</p>
+        <hr class="my-4">
+        <p class="lead">Realiza una b&uacute;squeda r&aacute;pida de la permuta que buscas:</p>
+        <div class="row justify-content-center">
+          <div class="col-xs-6">
+            <div class="btn-group mx-2">
+              <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nivel educativo
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Pre-escolar</a>
+                <a class="dropdown-item" href="#">Primaria</a>
+                <a class="dropdown-item" href="#">Secundaria</a>
+              </div>
             </div>
-
+          </div>
+          <div class="col-xs-6">
+            <div class="btn-group mx-2">
+              <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Estado
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Aguascalientes</a>
+                <a class="dropdown-item" href="#">Baja California</a>
+                <a class="dropdown-item" href="#">Baja California Sur</a>
+                <a class="dropdown-item" href="#">Campeche</a>
+                <a class="dropdown-item" href="#">Chiapas</a>
+                <a class="dropdown-item" href="#">Chihuahua</a>
+                <a class="dropdown-item" href="#">Ciudad de México</a>
+                <a class="dropdown-item" href="#">Coahuila</a>
+                <a class="dropdown-item" href="#">Colima</a>
+                <a class="dropdown-item" href="#">Durango</a>
+                <a class="dropdown-item" href="#">Estado de México</a>
+                <a class="dropdown-item" href="#">Guanajuato</a>
+                <a class="dropdown-item" href="#">Guerrero</a>
+                <a class="dropdown-item" href="#">Hidalgo</a>
+                <a class="dropdown-item" href="#">Jalisco</a>
+                <a class="dropdown-item" href="#">Michoacán</a>
+                <a class="dropdown-item" href="#">Morelos</a>
+                <a class="dropdown-item" href="#">Nayarit</a>
+                <a class="dropdown-item" href="#">Nuevo León</a>
+                <a class="dropdown-item" href="#">Oaxaca</a>
+                <a class="dropdown-item" href="#">Puebla</a>
+                <a class="dropdown-item" href="#">Querétaro</a>
+                <a class="dropdown-item" href="#">Quintana Roo</a>
+                <a class="dropdown-item" href="#">San Luis Potosí</a>
+                <a class="dropdown-item" href="#">Sinaloa</a>
+                <a class="dropdown-item" href="#">Sonora</a>
+                <a class="dropdown-item" href="#">Tabasco</a>
+                <a class="dropdown-item" href="#">Tamaulipas</a>
+                <a class="dropdown-item" href="#">Tlaxcala</a>
+                <a class="dropdown-item" href="#">Veracruz</a>
+                <a class="dropdown-item" href="#">Yucatán</a>
+                <a class="dropdown-item" href="#">Zacatecas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="btn-group mx-2">
+              <button type="button" class="btn btn-success btn-lg">
+                Buscar
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -164,6 +171,42 @@
               </span>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Contact form -->
+      <section class="jumbotron">
+        <div class="row">
+
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Nombre</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu nombre">
+            </div>
+          </div>
+
+          <div class="col-sm-8 col-xs-12">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nombre</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu nombre">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu correo">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie más.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleTextarea">Tu mensaje</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+
+
         </div>
       </section>
 
